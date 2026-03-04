@@ -1,0 +1,1639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Galaxis Global Techs | IT Consultancy & Digital Transformation</title>
+<meta name="description" content="Galaxis Global Techs is a premier IT consultancy delivering digital transformation, cloud solutions, cybersecurity, software development, and AI-powered services worldwide."/>
+<meta name="keywords" content="IT consultancy, digital transformation, cloud solutions, cybersecurity, software development, AI consulting, managed IT services, Galaxis Global Techs"/>
+<meta name="author" content="Galaxis Global Techs"/>
+<meta name="robots" content="index, follow"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://galaxisglobaltechs.com/"/>
+<meta property="og:title" content="Galaxis Global Techs | IT Consultancy & Digital Transformation"/>
+<meta property="og:description" content="Premier IT consultancy delivering digital transformation, cloud, cybersecurity and AI services worldwide."/>
+<meta property="og:site_name" content="Galaxis Global Techs"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<link rel="canonical" href="https://galaxisglobaltechs.com/"/>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"ProfessionalService",
+  "name":"Galaxis Global Techs",
+  "url":"https://galaxisglobaltechs.com",
+  "description":"Premier IT consultancy and digital transformation company.",
+  "serviceType":["IT Consulting","Cloud Solutions","Cybersecurity","Software Development","AI Services","Managed IT"],
+  "areaServed":"Worldwide"
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Fraunces:ital,wght@0,300;0,700;1,300;1,700&display=swap" rel="stylesheet"/>
+
+<style>
+/* ═══════════════════════════════════════
+   RESET & ROOT
+═══════════════════════════════════════ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+
+:root{
+  --ink:#0a0e1a;
+  --ink2:#131929;
+  --ink3:#1c2438;
+  --surface:#232d42;
+  --line:rgba(255,255,255,0.08);
+  --line2:rgba(255,255,255,0.04);
+  --gold:#f5c842;
+  --gold2:#e8a800;
+  --teal:#00c8aa;
+  --teal2:#009b84;
+  --sky:#3ab4f2;
+  --text:#d8dff0;
+  --muted:#7b8aaa;
+  --white:#ffffff;
+  --ff-head:'Fraunces',Georgia,serif;
+  --ff-body:'Outfit',sans-serif;
+  --r:14px;
+  --shadow:0 24px 80px rgba(0,0,0,0.45);
+  --nav-h:72px;
+}
+
+body{
+  background:var(--ink);
+  color:var(--text);
+  font-family:var(--ff-body);
+  font-size:1rem;
+  line-height:1.65;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* scrollbar */
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:var(--ink)}
+::-webkit-scrollbar-thumb{background:var(--gold);border-radius:10px}
+
+/* grid texture */
+body::before{
+  content:'';position:fixed;inset:0;
+  background-image:
+    linear-gradient(rgba(245,200,66,0.025) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(245,200,66,0.025) 1px,transparent 1px);
+  background-size:72px 72px;
+  pointer-events:none;z-index:0;
+}
+
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+button{cursor:pointer;font-family:var(--ff-body);border:none;outline:none}
+ul{list-style:none}
+
+/* ═══════════════════════════════════════
+   UTILITY
+═══════════════════════════════════════ */
+.container{max-width:1180px;margin:0 auto;padding:0 24px}
+.section{position:relative;z-index:1;padding:100px 0}
+.section--alt{background:var(--ink2)}
+.section--alt::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 900px 600px at 70% 50%,rgba(245,200,66,0.04),transparent);pointer-events:none}
+
+.tag{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(245,200,66,0.1);
+  border:1px solid rgba(245,200,66,0.25);
+  color:var(--gold);
+  padding:5px 16px;border-radius:100px;
+  font-size:0.72rem;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;
+  margin-bottom:20px;
+}
+.tag::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--gold);animation:pulse 1.8s infinite}
+
+h1,h2,h3,h4{font-family:var(--ff-head);line-height:1.08;letter-spacing:-0.5px;color:var(--white)}
+h1{font-size:clamp(2.8rem,6vw,5.4rem);font-weight:700}
+h2{font-size:clamp(2rem,4vw,3.2rem);font-weight:700}
+h3{font-size:1.25rem;font-weight:700}
+
+.accent{color:var(--gold);font-style:italic}
+.accent-teal{color:var(--teal)}
+
+.btn{
+  display:inline-flex;align-items:center;gap:9px;
+  font-family:var(--ff-body);font-weight:600;font-size:0.92rem;
+  border-radius:10px;padding:13px 28px;
+  transition:all 0.25s;text-decoration:none;
+}
+.btn-primary{
+  background:var(--gold);color:var(--ink);
+}
+.btn-primary:hover{background:var(--gold2);transform:translateY(-2px);box-shadow:0 12px 36px rgba(245,200,66,0.35)}
+.btn-outline{
+  background:transparent;color:var(--white);
+  border:1px solid rgba(255,255,255,0.2);
+}
+.btn-outline:hover{border-color:var(--gold);color:var(--gold);background:rgba(245,200,66,0.06)}
+.btn-teal{background:var(--teal);color:var(--ink)}
+.btn-teal:hover{background:var(--teal2);transform:translateY(-2px);box-shadow:0 12px 36px rgba(0,200,170,0.3)}
+
+/* arrow icon */
+.arr{display:inline-block;transition:transform 0.2s}
+.btn:hover .arr{transform:translateX(4px)}
+
+/* ═══════════════════════════════════════
+   NAV
+═══════════════════════════════════════ */
+.nav{
+  position:fixed;top:0;left:0;right:0;z-index:200;
+  height:var(--nav-h);
+  display:flex;align-items:center;
+  background:rgba(10,14,26,0.82);
+  backdrop-filter:blur(20px);
+  border-bottom:1px solid var(--line);
+  transition:background 0.3s;
+}
+.nav__inner{
+  width:100%;max-width:1180px;margin:0 auto;padding:0 24px;
+  display:flex;align-items:center;justify-content:space-between;
+}
+.nav__logo{
+  display:flex;align-items:center;gap:10px;
+  font-family:var(--ff-body);font-weight:800;font-size:1.25rem;letter-spacing:-0.3px;
+}
+.nav__logo-icon{
+  width:36px;height:36px;border-radius:9px;
+  background:linear-gradient(135deg,var(--gold),var(--gold2));
+  display:flex;align-items:center;justify-content:center;
+  font-size:1rem;font-weight:900;color:var(--ink);
+  flex-shrink:0;
+}
+.nav__logo-text{color:var(--white)}
+.nav__logo-text span{color:var(--gold)}
+
+.nav__links{display:flex;align-items:center;gap:2px}
+.nav__links a{
+  color:var(--muted);font-size:0.875rem;font-weight:500;
+  padding:7px 14px;border-radius:8px;
+  transition:all 0.2s;
+}
+.nav__links a:hover{color:var(--white);background:rgba(255,255,255,0.05)}
+
+.nav__cta{
+  display:flex;align-items:center;gap:10px;
+}
+.nav__cta .btn{padding:9px 20px;font-size:0.85rem}
+
+/* hamburger */
+.nav__burger{
+  display:none;flex-direction:column;gap:5px;
+  width:36px;height:36px;justify-content:center;align-items:center;
+  background:rgba(255,255,255,0.05);border-radius:8px;
+  cursor:pointer;border:1px solid var(--line);
+}
+.nav__burger span{
+  display:block;width:18px;height:1.5px;
+  background:var(--white);border-radius:2px;
+  transition:all 0.3s;
+}
+
+/* mobile menu */
+.nav__mobile{
+  display:none;position:fixed;top:var(--nav-h);left:0;right:0;
+  background:var(--ink2);border-bottom:1px solid var(--line);
+  padding:20px 24px;z-index:190;
+  flex-direction:column;gap:4px;
+}
+.nav__mobile.open{display:flex}
+.nav__mobile a{
+  color:var(--text);font-size:0.95rem;font-weight:500;
+  padding:12px 16px;border-radius:10px;
+  display:block;transition:all 0.2s;
+}
+.nav__mobile a:hover{background:rgba(245,200,66,0.08);color:var(--gold)}
+.nav__mobile .btn{margin-top:10px;width:100%;justify-content:center}
+
+/* ═══════════════════════════════════════
+   HERO
+═══════════════════════════════════════ */
+.hero{
+  position:relative;z-index:1;
+  min-height:100vh;
+  display:flex;align-items:center;
+  padding-top:var(--nav-h);
+  overflow:hidden;
+}
+
+.hero__glow{
+  position:absolute;top:-200px;right:-300px;
+  width:900px;height:900px;
+  background:radial-gradient(ellipse,rgba(245,200,66,0.12) 0%,rgba(0,200,170,0.06) 40%,transparent 70%);
+  pointer-events:none;
+}
+.hero__glow2{
+  position:absolute;bottom:-200px;left:-200px;
+  width:700px;height:700px;
+  background:radial-gradient(ellipse,rgba(58,180,242,0.08) 0%,transparent 65%);
+  pointer-events:none;
+}
+
+.hero__inner{
+  max-width:1180px;margin:0 auto;padding:0 24px;
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:80px;align-items:center;width:100%;
+}
+
+.hero__content{animation:fadeUp 0.8s ease both}
+
+.hero__eyebrow{
+  display:flex;align-items:center;gap:12px;margin-bottom:28px;
+}
+.hero__line{width:40px;height:1px;background:var(--gold)}
+
+.hero__eyebrow-text{
+  font-size:0.75rem;font-weight:700;letter-spacing:3px;
+  text-transform:uppercase;color:var(--gold);
+}
+
+.hero h1{margin-bottom:24px;color:var(--white)}
+.hero h1 em{display:block;font-style:italic;color:var(--gold)}
+
+.hero__desc{
+  font-size:1.05rem;color:var(--muted);
+  max-width:480px;margin-bottom:44px;line-height:1.8;
+}
+
+.hero__actions{display:flex;gap:12px;flex-wrap:wrap}
+
+.hero__stats{
+  display:flex;gap:32px;margin-top:52px;
+  padding-top:32px;border-top:1px solid var(--line);
+}
+.hero__stat-num{
+  font-family:var(--ff-head);font-size:2.2rem;font-weight:700;
+  color:var(--white);line-height:1;
+}
+.hero__stat-num span{color:var(--gold)}
+.hero__stat-label{font-size:0.78rem;color:var(--muted);margin-top:4px;font-weight:500}
+
+/* hero visual */
+.hero__visual{
+  position:relative;
+  animation:fadeUp 0.9s ease 0.15s both;
+}
+
+.hero__card-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:14px;
+}
+
+.hcard{
+  background:var(--ink2);
+  border:1px solid var(--line);
+  border-radius:18px;padding:24px 20px;
+  transition:all 0.3s;
+  position:relative;overflow:hidden;
+}
+.hcard::after{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(135deg,rgba(245,200,66,0.04),transparent);
+  opacity:0;transition:opacity 0.3s;
+}
+.hcard:hover::after{opacity:1}
+.hcard:hover{border-color:rgba(245,200,66,0.2);transform:translateY(-3px)}
+.hcard--wide{grid-column:span 2}
+.hcard__icon{
+  width:42px;height:42px;border-radius:10px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.2rem;margin-bottom:14px;
+}
+.hcard__icon--gold{background:rgba(245,200,66,0.12)}
+.hcard__icon--teal{background:rgba(0,200,170,0.12)}
+.hcard__icon--sky{background:rgba(58,180,242,0.12)}
+.hcard h4{font-family:var(--ff-body);font-size:0.88rem;font-weight:700;color:var(--white);margin-bottom:5px}
+.hcard p{font-size:0.77rem;color:var(--muted);line-height:1.55}
+
+.hcard--wide .hcard__inner{display:flex;align-items:center;gap:16px}
+.hcard--wide .hcard__icon{flex-shrink:0;margin-bottom:0}
+
+.hero__badge{
+  position:absolute;top:-18px;right:-18px;
+  background:linear-gradient(135deg,var(--gold),var(--gold2));
+  color:var(--ink);
+  font-family:var(--ff-body);font-size:0.7rem;font-weight:800;
+  letter-spacing:1px;text-transform:uppercase;
+  padding:10px 18px;border-radius:100px;
+  box-shadow:0 8px 24px rgba(245,200,66,0.4);
+}
+
+/* ═══════════════════════════════════════
+   MARQUEE
+═══════════════════════════════════════ */
+.marquee-strip{
+  position:relative;z-index:1;
+  background:var(--ink2);
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  padding:16px 0;overflow:hidden;
+}
+.marquee-track{
+  display:flex;width:max-content;
+  animation:marquee 30s linear infinite;
+}
+.marquee-track span{
+  font-family:var(--ff-body);font-size:0.78rem;font-weight:600;
+  letter-spacing:2.5px;text-transform:uppercase;
+  color:var(--muted);padding:0 36px;white-space:nowrap;
+}
+.marquee-track span strong{color:var(--gold);margin-right:6px}
+
+/* ═══════════════════════════════════════
+   ABOUT
+═══════════════════════════════════════ */
+.about__grid{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:80px;align-items:center;
+}
+.about__desc{font-size:0.97rem;color:var(--muted);line-height:1.85;margin-bottom:20px}
+
+.about__features{display:flex;flex-direction:column;gap:14px;margin-top:36px}
+.about__feat{
+  display:flex;align-items:flex-start;gap:14px;
+  background:var(--ink3);border:1px solid var(--line);
+  border-radius:12px;padding:18px 20px;
+  transition:border-color 0.2s;
+}
+.about__feat:hover{border-color:rgba(245,200,66,0.2)}
+.about__feat-icon{
+  width:36px;height:36px;flex-shrink:0;border-radius:8px;
+  background:rgba(245,200,66,0.1);
+  display:flex;align-items:center;justify-content:center;font-size:1rem;
+}
+.about__feat-title{font-weight:700;font-size:0.88rem;color:var(--white);margin-bottom:3px}
+.about__feat-desc{font-size:0.8rem;color:var(--muted)}
+
+/* about visual */
+.about__visual{position:relative}
+.about__img-wrap{
+  background:var(--ink3);border:1px solid var(--line);
+  border-radius:24px;overflow:hidden;padding:32px;
+  position:relative;
+}
+.about__orb{
+  position:absolute;top:-60px;right:-60px;
+  width:200px;height:200px;border-radius:50%;
+  background:radial-gradient(circle,rgba(245,200,66,0.15),transparent 70%);
+  pointer-events:none;
+}
+.about__metric-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.about__metric{
+  background:var(--ink2);border:1px solid var(--line);
+  border-radius:14px;padding:22px 18px;text-align:center;
+  transition:all 0.25s;
+}
+.about__metric:hover{border-color:rgba(245,200,66,0.25);transform:translateY(-3px)}
+.about__metric-num{
+  font-family:var(--ff-head);font-size:2.4rem;font-weight:700;
+  color:var(--gold);line-height:1;margin-bottom:6px;
+}
+.about__metric-label{font-size:0.78rem;color:var(--muted);font-weight:500}
+
+.about__quote{
+  background:linear-gradient(135deg,rgba(245,200,66,0.08),rgba(0,200,170,0.06));
+  border:1px solid rgba(245,200,66,0.15);
+  border-radius:14px;padding:24px;margin-top:14px;
+}
+.about__quote p{
+  font-family:var(--ff-head);font-style:italic;
+  font-size:1rem;color:var(--text);line-height:1.6;margin-bottom:12px;
+}
+.about__quote cite{font-size:0.78rem;color:var(--muted);font-style:normal;font-weight:600}
+
+/* ═══════════════════════════════════════
+   SERVICES
+═══════════════════════════════════════ */
+.services__head{text-align:center;margin-bottom:64px}
+.services__head .tag{justify-content:center}
+.services__sub{font-size:1rem;color:var(--muted);max-width:520px;margin:14px auto 0;line-height:1.75}
+
+.services__grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:20px;
+}
+
+.scard{
+  background:var(--ink2);border:1px solid var(--line);
+  border-radius:20px;padding:34px 28px;
+  transition:all 0.35s;position:relative;overflow:hidden;
+  cursor:default;
+}
+.scard::before{
+  content:'';position:absolute;bottom:0;left:0;right:0;
+  height:3px;
+  background:linear-gradient(90deg,var(--gold),var(--teal));
+  transform:scaleX(0);transform-origin:left;
+  transition:transform 0.4s;
+}
+.scard:hover::before{transform:scaleX(1)}
+.scard:hover{
+  border-color:rgba(245,200,66,0.2);
+  transform:translateY(-6px);
+  box-shadow:0 28px 64px rgba(0,0,0,0.35);
+}
+
+.scard__num{
+  font-family:var(--ff-head);font-size:3rem;font-weight:700;
+  color:rgba(255,255,255,0.04);line-height:1;
+  position:absolute;top:20px;right:24px;
+  transition:color 0.3s;
+}
+.scard:hover .scard__num{color:rgba(245,200,66,0.07)}
+
+.scard__icon{
+  width:54px;height:54px;border-radius:14px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.5rem;margin-bottom:22px;
+  background:rgba(245,200,66,0.08);
+  border:1px solid rgba(245,200,66,0.12);
+  transition:all 0.3s;
+}
+.scard:hover .scard__icon{background:rgba(245,200,66,0.14);border-color:rgba(245,200,66,0.25)}
+
+.scard h3{font-family:var(--ff-body);font-size:1.05rem;font-weight:700;color:var(--white);margin-bottom:10px}
+.scard p{font-size:0.85rem;color:var(--muted);line-height:1.7;margin-bottom:22px}
+
+.scard__tags{display:flex;flex-wrap:wrap;gap:6px}
+.stag{
+  font-size:0.68rem;font-weight:600;letter-spacing:0.5px;
+  padding:3px 10px;border-radius:100px;
+  background:rgba(255,255,255,0.05);color:var(--muted);
+  border:1px solid var(--line);
+}
+
+/* ═══════════════════════════════════════
+   PROCESS
+═══════════════════════════════════════ */
+.process__head{text-align:center;margin-bottom:64px}
+
+.process__steps{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  gap:0;position:relative;
+}
+.process__steps::before{
+  content:'';position:absolute;
+  top:40px;left:12.5%;right:12.5%;height:1px;
+  background:linear-gradient(90deg,transparent,var(--gold),var(--teal),transparent);
+  z-index:0;
+}
+
+.pstep{
+  text-align:center;padding:0 16px;position:relative;z-index:1;
+}
+.pstep__dot{
+  width:80px;height:80px;border-radius:50%;
+  background:var(--ink2);border:2px solid rgba(245,200,66,0.25);
+  display:flex;align-items:center;justify-content:center;
+  margin:0 auto 24px;font-size:1.5rem;
+  transition:all 0.3s;position:relative;
+}
+.pstep__dot::after{
+  content:attr(data-step);
+  position:absolute;top:-6px;right:-6px;
+  width:22px;height:22px;border-radius:50%;
+  background:var(--gold);color:var(--ink);
+  font-size:0.65rem;font-weight:800;
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--ff-body);
+}
+.pstep:hover .pstep__dot{
+  border-color:var(--gold);
+  background:rgba(245,200,66,0.06);
+  box-shadow:0 0 30px rgba(245,200,66,0.15);
+}
+.pstep h4{font-family:var(--ff-body);font-weight:700;color:var(--white);font-size:0.95rem;margin-bottom:8px}
+.pstep p{font-size:0.8rem;color:var(--muted);line-height:1.65}
+
+/* ═══════════════════════════════════════
+   INDUSTRIES
+═══════════════════════════════════════ */
+.industries__head{text-align:center;margin-bottom:60px}
+.industries__grid{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:16px;
+}
+.icard{
+  background:var(--ink2);border:1px solid var(--line);
+  border-radius:16px;padding:28px 22px;text-align:center;
+  transition:all 0.3s;
+}
+.icard:hover{
+  border-color:rgba(245,200,66,0.2);
+  transform:translateY(-4px);
+  background:var(--ink3);
+}
+.icard__icon{font-size:2.2rem;margin-bottom:14px;display:block}
+.icard h4{font-family:var(--ff-body);font-size:0.88rem;font-weight:700;color:var(--white);margin-bottom:6px}
+.icard p{font-size:0.76rem;color:var(--muted)}
+
+/* ═══════════════════════════════════════
+   TESTIMONIALS
+═══════════════════════════════════════ */
+.testi__head{text-align:center;margin-bottom:60px}
+.testi__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+
+.tcard{
+  background:var(--ink2);border:1px solid var(--line);
+  border-radius:20px;padding:32px 28px;
+  transition:all 0.3s;position:relative;
+}
+.tcard::before{
+  content:'\201C';
+  font-family:Georgia,serif;font-size:5rem;line-height:0.8;
+  color:rgba(245,200,66,0.1);position:absolute;top:20px;left:22px;
+}
+.tcard:hover{border-color:rgba(245,200,66,0.18);transform:translateY(-4px)}
+
+.tcard__stars{color:var(--gold);font-size:0.85rem;letter-spacing:3px;margin-bottom:16px}
+.tcard__quote{font-size:0.88rem;color:var(--text);line-height:1.78;margin-bottom:24px;font-style:italic;position:relative;z-index:1}
+.tcard__author{display:flex;align-items:center;gap:12px}
+.tcard__avatar{
+  width:44px;height:44px;border-radius:50%;flex-shrink:0;
+  background:linear-gradient(135deg,var(--gold),var(--teal));
+  display:flex;align-items:center;justify-content:center;
+  font-weight:800;font-size:0.95rem;color:var(--ink);
+}
+.tcard__name{font-weight:700;font-size:0.88rem;color:var(--white)}
+.tcard__role{font-size:0.74rem;color:var(--muted);margin-top:2px}
+
+/* ═══════════════════════════════════════
+   TEAM
+═══════════════════════════════════════ */
+.team__head{text-align:center;margin-bottom:60px}
+.team__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+
+.tmcard{
+  background:var(--ink2);border:1px solid var(--line);
+  border-radius:20px;padding:32px 22px;text-align:center;
+  transition:all 0.3s;
+}
+.tmcard:hover{border-color:rgba(245,200,66,0.2);transform:translateY(-5px)}
+.tmcard__avatar{
+  width:74px;height:74px;border-radius:50%;margin:0 auto 18px;
+  background:linear-gradient(135deg,var(--gold),var(--teal));
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--ff-head);font-size:1.5rem;font-weight:700;color:var(--ink);
+  border:3px solid rgba(245,200,66,0.2);
+}
+.tmcard h4{font-family:var(--ff-body);font-weight:700;color:var(--white);font-size:1rem;margin-bottom:4px}
+.tmcard__role{font-size:0.79rem;color:var(--muted);margin-bottom:14px}
+.tmcard__badge{
+  display:inline-block;
+  background:rgba(245,200,66,0.09);border:1px solid rgba(245,200,66,0.2);
+  color:var(--gold);padding:3px 12px;border-radius:100px;
+  font-size:0.69rem;font-weight:700;letter-spacing:0.5px;
+}
+.tmcard__links{display:flex;justify-content:center;gap:8px;margin-top:14px}
+.tmcard__link{
+  width:30px;height:30px;border-radius:50%;
+  background:rgba(255,255,255,0.05);border:1px solid var(--line);
+  display:flex;align-items:center;justify-content:center;
+  font-size:0.7rem;color:var(--muted);
+  transition:all 0.2s;
+}
+.tmcard__link:hover{background:rgba(245,200,66,0.12);color:var(--gold);border-color:rgba(245,200,66,0.25)}
+
+/* ═══════════════════════════════════════
+   CTA BAND
+═══════════════════════════════════════ */
+.cta-band{
+  position:relative;z-index:1;
+  background:linear-gradient(135deg,var(--gold) 0%,var(--gold2) 100%);
+  padding:72px 0;overflow:hidden;
+}
+.cta-band::before{
+  content:'';position:absolute;inset:0;
+  background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.cta-band__inner{
+  max-width:800px;margin:0 auto;padding:0 24px;
+  text-align:center;position:relative;z-index:1;
+}
+.cta-band h2{color:var(--ink);font-size:clamp(1.8rem,4vw,3rem);margin-bottom:14px}
+.cta-band p{color:rgba(10,14,26,0.7);font-size:1.05rem;margin-bottom:36px;max-width:480px;margin-left:auto;margin-right:auto}
+.cta-band .btn-dark{
+  background:var(--ink);color:var(--gold);border-radius:10px;
+  padding:14px 32px;font-weight:700;font-size:0.95rem;
+  display:inline-flex;align-items:center;gap:9px;
+  transition:all 0.25s;
+}
+.cta-band .btn-dark:hover{background:var(--ink2);transform:translateY(-2px);box-shadow:0 14px 40px rgba(0,0,0,0.3)}
+.cta-band .btn-ghost{
+  background:transparent;color:var(--ink);
+  border:2px solid rgba(10,14,26,0.25);
+  border-radius:10px;padding:14px 32px;font-weight:700;font-size:0.95rem;
+  display:inline-flex;align-items:center;gap:9px;
+  transition:all 0.25s;margin-left:12px;
+}
+.cta-band .btn-ghost:hover{background:rgba(10,14,26,0.08)}
+
+/* ═══════════════════════════════════════
+   FAQ
+═══════════════════════════════════════ */
+.faq__head{text-align:center;margin-bottom:60px}
+.faq__grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:960px;margin:0 auto}
+
+.fitem{
+  background:var(--ink2);border:1px solid var(--line);
+  border-radius:14px;overflow:hidden;
+}
+.fitem__q{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:20px 24px;cursor:pointer;
+  font-size:0.9rem;font-weight:600;color:var(--text);
+  transition:color 0.2s;gap:14px;user-select:none;
+}
+.fitem__q:hover{color:var(--white)}
+.fitem__icon{
+  width:26px;height:26px;border-radius:50%;flex-shrink:0;
+  border:1px solid var(--line);
+  display:flex;align-items:center;justify-content:center;
+  font-size:0.75rem;color:var(--gold);
+  transition:all 0.3s;
+}
+.fitem.open .fitem__icon{background:var(--gold);color:var(--ink);border-color:var(--gold);transform:rotate(180deg)}
+.fitem.open .fitem__q{color:var(--white)}
+.fitem__a{
+  font-size:0.85rem;color:var(--muted);
+  max-height:0;overflow:hidden;
+  transition:max-height 0.4s ease,padding 0.3s;
+  line-height:1.75;
+  padding:0 24px;
+}
+.fitem.open .fitem__a{max-height:300px;padding:0 24px 20px}
+
+/* ═══════════════════════════════════════
+   CONTACT
+═══════════════════════════════════════ */
+.contact__grid{display:grid;grid-template-columns:1fr 1.4fr;gap:60px;align-items:start}
+
+.contact__info h2{margin-bottom:16px}
+.contact__info p{font-size:0.95rem;color:var(--muted);line-height:1.8;margin-bottom:36px}
+
+.contact__items{display:flex;flex-direction:column;gap:14px}
+.citem{
+  display:flex;align-items:flex-start;gap:14px;
+  background:var(--ink2);border:1px solid var(--line);
+  border-radius:12px;padding:18px 20px;
+  transition:border-color 0.2s;
+}
+.citem:hover{border-color:rgba(245,200,66,0.2)}
+.citem__icon{
+  width:38px;height:38px;flex-shrink:0;border-radius:9px;
+  background:rgba(245,200,66,0.1);
+  display:flex;align-items:center;justify-content:center;font-size:1rem;
+}
+.citem__label{font-size:0.72rem;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:3px;font-weight:600}
+.citem__value{font-size:0.9rem;color:var(--white);font-weight:500}
+
+/* form */
+.contact__form{
+  background:var(--ink2);border:1px solid var(--line);
+  border-radius:24px;padding:40px;
+}
+.contact__form h3{font-family:var(--ff-body);margin-bottom:28px;color:var(--white)}
+
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+.fgroup{display:flex;flex-direction:column;gap:7px}
+.fgroup label{font-size:0.78rem;color:var(--muted);font-weight:600;letter-spacing:0.3px}
+.fgroup input,.fgroup textarea,.fgroup select{
+  background:var(--ink3);border:1px solid var(--line);
+  border-radius:10px;padding:12px 16px;
+  color:var(--white);font-family:var(--ff-body);font-size:0.9rem;
+  outline:none;transition:border-color 0.2s;width:100%;
+  -webkit-appearance:none;
+}
+.fgroup input:focus,.fgroup textarea:focus,.fgroup select:focus{border-color:var(--gold)}
+.fgroup input::placeholder,.fgroup textarea::placeholder{color:var(--muted);opacity:0.7}
+.fgroup textarea{min-height:110px;resize:vertical}
+
+.form-submit{
+  width:100%;margin-top:8px;
+  background:linear-gradient(135deg,var(--gold),var(--gold2));
+  color:var(--ink);font-weight:700;font-size:1rem;
+  border-radius:10px;padding:15px;
+  display:flex;align-items:center;justify-content:center;gap:9px;
+  transition:all 0.25s;
+}
+.form-submit:hover{transform:translateY(-2px);box-shadow:0 14px 40px rgba(245,200,66,0.35)}
+
+/* ═══════════════════════════════════════
+   FOOTER
+═══════════════════════════════════════ */
+.footer{
+  position:relative;z-index:1;
+  background:var(--ink);
+  border-top:1px solid var(--line);
+  padding:64px 0 0;
+}
+.footer__inner{
+  display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;
+  padding-bottom:48px;border-bottom:1px solid var(--line);
+}
+.footer__brand p{font-size:0.85rem;color:var(--muted);margin-top:16px;max-width:280px;line-height:1.8}
+.footer__brand .footer__social{display:flex;gap:8px;margin-top:24px}
+.footer__social a{
+  width:36px;height:36px;border-radius:9px;
+  background:var(--ink2);border:1px solid var(--line);
+  display:flex;align-items:center;justify-content:center;
+  font-size:0.75rem;color:var(--muted);
+  transition:all 0.2s;
+}
+.footer__social a:hover{background:rgba(245,200,66,0.1);color:var(--gold);border-color:rgba(245,200,66,0.2)}
+
+.footer__col h5{
+  font-family:var(--ff-body);font-weight:700;font-size:0.78rem;
+  color:var(--white);text-transform:uppercase;letter-spacing:2px;margin-bottom:18px;
+}
+.footer__col a{
+  display:block;font-size:0.85rem;color:var(--muted);
+  margin-bottom:10px;transition:color 0.2s;
+}
+.footer__col a:hover{color:var(--gold)}
+
+.footer__bottom{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:20px 0;font-size:0.8rem;color:var(--muted);
+}
+.footer__bottom a{color:var(--muted);transition:color 0.2s}
+.footer__bottom a:hover{color:var(--gold)}
+
+/* ═══════════════════════════════════════
+   SCROLL REVEAL
+═══════════════════════════════════════ */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity 0.7s ease,transform 0.7s ease}
+.reveal.vis{opacity:1;transform:none}
+.reveal-left{opacity:0;transform:translateX(-30px);transition:opacity 0.7s ease,transform 0.7s ease}
+.reveal-left.vis{opacity:1;transform:none}
+.reveal-right{opacity:0;transform:translateX(30px);transition:opacity 0.7s ease,transform 0.7s ease}
+.reveal-right.vis{opacity:1;transform:none}
+
+/* ═══════════════════════════════════════
+   ANIMATIONS
+═══════════════════════════════════════ */
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.35}}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+
+/* back to top */
+.back-top{
+  position:fixed;bottom:28px;right:28px;
+  width:44px;height:44px;border-radius:50%;
+  background:var(--gold);color:var(--ink);
+  display:flex;align-items:center;justify-content:center;font-size:1rem;
+  z-index:150;cursor:pointer;
+  opacity:0;pointer-events:none;
+  transition:all 0.3s;
+  box-shadow:0 8px 24px rgba(245,200,66,0.35);
+}
+.back-top.show{opacity:1;pointer-events:all}
+.back-top:hover{transform:translateY(-3px)}
+
+/* ═══════════════════════════════════════
+   RESPONSIVE — TABLET (≤ 1024px)
+═══════════════════════════════════════ */
+@media(max-width:1024px){
+  .hero__inner{grid-template-columns:1fr;gap:48px;text-align:center}
+  .hero__eyebrow{justify-content:center}
+  .hero__desc{margin-left:auto;margin-right:auto}
+  .hero__actions{justify-content:center}
+  .hero__stats{justify-content:center}
+  .hero__badge{top:-10px;right:10px}
+
+  .about__grid{grid-template-columns:1fr;gap:48px}
+  .services__grid{grid-template-columns:1fr 1fr}
+  .process__steps{grid-template-columns:1fr 1fr;gap:36px}
+  .process__steps::before{display:none}
+  .industries__grid{grid-template-columns:repeat(2,1fr)}
+  .testi__grid{grid-template-columns:1fr 1fr}
+  .team__grid{grid-template-columns:1fr 1fr}
+  .footer__inner{grid-template-columns:1fr 1fr;gap:32px}
+  .contact__grid{grid-template-columns:1fr}
+  .faq__grid{grid-template-columns:1fr}
+}
+
+/* ═══════════════════════════════════════
+   RESPONSIVE — MOBILE (≤ 768px)
+═══════════════════════════════════════ */
+@media(max-width:768px){
+  :root{--nav-h:64px}
+  .section{padding:70px 0}
+  .nav__links,.nav__cta{display:none}
+  .nav__burger{display:flex}
+
+  h1{font-size:2.4rem;letter-spacing:-1px}
+  h2{font-size:1.9rem}
+
+  .hero__card-grid{grid-template-columns:1fr}
+  .hero__stats{flex-direction:column;gap:20px}
+  .hero__badge{top:auto;bottom:-14px;right:50%;transform:translateX(50%)}
+
+  .services__grid{grid-template-columns:1fr}
+  .process__steps{grid-template-columns:1fr;gap:28px}
+  .industries__grid{grid-template-columns:1fr 1fr}
+  .testi__grid{grid-template-columns:1fr}
+  .team__grid{grid-template-columns:1fr 1fr}
+  .footer__inner{grid-template-columns:1fr}
+  .footer__bottom{flex-direction:column;gap:12px;text-align:center}
+  .cta-band .btn-ghost{margin-left:0;margin-top:12px}
+  .form-row{grid-template-columns:1fr}
+  .about__metric-grid{grid-template-columns:1fr 1fr}
+  .contact__form{padding:28px 20px}
+}
+
+/* ═══════════════════════════════════════
+   RESPONSIVE — SMALL MOBILE (≤ 480px)
+═══════════════════════════════════════ */
+@media(max-width:480px){
+  .hero__card-grid{grid-template-columns:1fr}
+  .team__grid{grid-template-columns:1fr}
+  .industries__grid{grid-template-columns:1fr 1fr}
+  .about__metric-grid{grid-template-columns:1fr 1fr}
+  .hero__stats{gap:16px}
+  .hero__stat-num{font-size:1.8rem}
+  h1{font-size:2rem}
+  h2{font-size:1.6rem}
+  .cta-band h2{font-size:1.6rem}
+  .container{padding:0 16px}
+}
+</style>
+</head>
+<body>
+
+<!-- ════════════════ NAV ════════════════ -->
+<nav class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#home" class="nav__logo">
+      <div class="nav__logo-icon">G</div>
+      <span class="nav__logo-text">Galaxis<span>Global</span>Techs</span>
+    </a>
+    <ul class="nav__links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#industries">Industries</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <div class="nav__cta">
+      <a href="#contact" class="btn btn-primary">Get in Touch <span class="arr">→</span></a>
+    </div>
+    <div class="nav__burger" id="burger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- mobile nav -->
+<div class="nav__mobile" id="mobileMenu">
+  <a href="#about" onclick="toggleMenu()">About</a>
+  <a href="#services" onclick="toggleMenu()">Services</a>
+  <a href="#process" onclick="toggleMenu()">Process</a>
+  <a href="#industries" onclick="toggleMenu()">Industries</a>
+  <a href="#team" onclick="toggleMenu()">Team</a>
+  <a href="#faq" onclick="toggleMenu()">FAQ</a>
+  <a href="#contact" class="btn btn-primary" onclick="toggleMenu()">Get in Touch →</a>
+</div>
+
+<!-- ════════════════ HERO ════════════════ -->
+<section class="hero" id="home">
+  <div class="hero__glow"></div>
+  <div class="hero__glow2"></div>
+  <div class="hero__inner">
+    <div class="hero__content">
+      <div class="hero__eyebrow">
+        <div class="hero__line"></div>
+        <span class="hero__eyebrow-text">Global IT Consultancy</span>
+      </div>
+      <h1>
+        Transforming Business
+        <em>Through Technology</em>
+      </h1>
+      <p class="hero__desc">
+        Galaxis Global Techs delivers expert IT consulting, cloud transformation, cybersecurity, and
+        AI-powered solutions — empowering businesses worldwide to innovate faster and scale smarter.
+      </p>
+      <div class="hero__actions">
+        <a href="#contact" class="btn btn-primary">Start Your Project <span class="arr">→</span></a>
+        <a href="#services" class="btn btn-outline">Explore Services</a>
+      </div>
+      <div class="hero__stats">
+        <div>
+          <div class="hero__stat-num">250<span>+</span></div>
+          <div class="hero__stat-label">Projects Delivered</div>
+        </div>
+        <div>
+          <div class="hero__stat-num">12<span>+</span></div>
+          <div class="hero__stat-label">Years Experience</div>
+        </div>
+        <div>
+          <div class="hero__stat-num">98<span>%</span></div>
+          <div class="hero__stat-label">Client Satisfaction</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__visual">
+      <div class="hero__badge">🏆 Top IT Consultancy 2024</div>
+      <div class="hero__card-grid">
+        <div class="hcard">
+          <div class="hcard__icon hcard__icon--gold">☁️</div>
+          <h4>Cloud Migration</h4>
+          <p>Seamless migration to AWS, Azure & GCP with zero downtime.</p>
+        </div>
+        <div class="hcard">
+          <div class="hcard__icon hcard__icon--teal">🔐</div>
+          <h4>Cybersecurity</h4>
+          <p>End-to-end security audits, compliance & threat protection.</p>
+        </div>
+        <div class="hcard">
+          <div class="hcard__icon hcard__icon--sky">🤖</div>
+          <h4>AI & Automation</h4>
+          <p>ML-powered workflows and intelligent process automation.</p>
+        </div>
+        <div class="hcard hcard--wide">
+          <div class="hcard__inner">
+            <div class="hcard__icon hcard__icon--gold">📊</div>
+            <div>
+              <h4>Business Intelligence & Analytics</h4>
+              <p>Real-time dashboards and data-driven insights to steer business decisions confidently.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ MARQUEE ════════════════ -->
+<div class="marquee-strip">
+  <div class="marquee-track">
+    <span><strong>✦</strong> IT Consulting</span>
+    <span><strong>✦</strong> Cloud Solutions</span>
+    <span><strong>✦</strong> Cybersecurity</span>
+    <span><strong>✦</strong> AI &amp; ML</span>
+    <span><strong>✦</strong> Digital Transformation</span>
+    <span><strong>✦</strong> Managed Services</span>
+    <span><strong>✦</strong> Software Development</span>
+    <span><strong>✦</strong> Data Analytics</span>
+    <span><strong>✦</strong> DevOps</span>
+    <span><strong>✦</strong> ERP Solutions</span>
+    <span><strong>✦</strong> IT Consulting</span>
+    <span><strong>✦</strong> Cloud Solutions</span>
+    <span><strong>✦</strong> Cybersecurity</span>
+    <span><strong>✦</strong> AI &amp; ML</span>
+    <span><strong>✦</strong> Digital Transformation</span>
+    <span><strong>✦</strong> Managed Services</span>
+    <span><strong>✦</strong> Software Development</span>
+    <span><strong>✦</strong> Data Analytics</span>
+    <span><strong>✦</strong> DevOps</span>
+    <span><strong>✦</strong> ERP Solutions</span>
+  </div>
+</div>
+
+<!-- ════════════════ ABOUT ════════════════ -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="about__grid">
+      <div class="reveal-left">
+        <div class="tag">About Us</div>
+        <h2>Your Global <span class="accent">Technology</span> Partner</h2>
+        <p class="about__desc">
+          Galaxis Global Techs is a premier IT consultancy founded on the belief that great technology,
+          expertly applied, transforms businesses. With over a decade of deep expertise across industries,
+          we bridge the gap between business ambition and technological possibility.
+        </p>
+        <p class="about__desc">
+          From startups to Fortune 500 enterprises, we deliver tailored solutions that drive measurable
+          outcomes — cutting costs, accelerating growth, and future-proofing operations worldwide.
+        </p>
+        <div class="about__features">
+          <div class="about__feat">
+            <div class="about__feat-icon">🎯</div>
+            <div>
+              <div class="about__feat-title">Goal-Oriented Consulting</div>
+              <div class="about__feat-desc">We align every technology decision to your core business objectives and KPIs.</div>
+            </div>
+          </div>
+          <div class="about__feat">
+            <div class="about__feat-icon">🌐</div>
+            <div>
+              <div class="about__feat-title">Global Delivery Model</div>
+              <div class="about__feat-desc">Distributed expert teams across time zones ensuring 24/7 continuity.</div>
+            </div>
+          </div>
+          <div class="about__feat">
+            <div class="about__feat-icon">🔬</div>
+            <div>
+              <div class="about__feat-title">Research-Driven Innovation</div>
+              <div class="about__feat-desc">Continuously exploring emerging tech to give clients a competitive edge.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <div class="about__visual">
+          <div class="about__orb"></div>
+          <div class="about__img-wrap">
+            <div class="about__metric-grid">
+              <div class="about__metric">
+                <div class="about__metric-num">250+</div>
+                <div class="about__metric-label">Projects Completed</div>
+              </div>
+              <div class="about__metric">
+                <div class="about__metric-num">40+</div>
+                <div class="about__metric-label">Expert Consultants</div>
+              </div>
+              <div class="about__metric">
+                <div class="about__metric-num">18</div>
+                <div class="about__metric-label">Countries Served</div>
+              </div>
+              <div class="about__metric">
+                <div class="about__metric-num">12+</div>
+                <div class="about__metric-label">Years of Excellence</div>
+              </div>
+            </div>
+            <div class="about__quote">
+              <p>"We don't just implement technology — we architect the future of your business."</p>
+              <cite>— Galaxis Global Techs Leadership</cite>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ SERVICES ════════════════ -->
+<section class="section section--alt" id="services">
+  <div class="container">
+    <div class="services__head reveal">
+      <div class="tag">Our Services</div>
+      <h2>End-to-End <span class="accent">Technology</span> Solutions</h2>
+      <p class="services__sub">From strategy to execution, we deliver comprehensive IT services tailored to accelerate your business.</p>
+    </div>
+    <div class="services__grid">
+
+      <div class="scard reveal">
+        <span class="scard__num">01</span>
+        <div class="scard__icon">💼</div>
+        <h3>IT Strategy & Consulting</h3>
+        <p>Align technology investments with business goals. We craft roadmaps, governance frameworks, and transformation plans that deliver real competitive advantage.</p>
+        <div class="scard__tags">
+          <span class="stag">Digital Roadmap</span>
+          <span class="stag">IT Governance</span>
+          <span class="stag">CTO Advisory</span>
+        </div>
+      </div>
+
+      <div class="scard reveal">
+        <span class="scard__num">02</span>
+        <div class="scard__icon">☁️</div>
+        <h3>Cloud Solutions</h3>
+        <p>Design, migrate, and manage cloud infrastructure on AWS, Azure, and GCP. Reduce costs, boost scalability, and modernize your IT estate with confidence.</p>
+        <div class="scard__tags">
+          <span class="stag">AWS</span>
+          <span class="stag">Azure</span>
+          <span class="stag">GCP</span>
+          <span class="stag">Multi-cloud</span>
+        </div>
+      </div>
+
+      <div class="scard reveal">
+        <span class="scard__num">03</span>
+        <div class="scard__icon">🔐</div>
+        <h3>Cybersecurity</h3>
+        <p>Comprehensive security assessments, zero-trust architecture, compliance (ISO, SOC2, HIPAA), and continuous monitoring to protect your critical assets.</p>
+        <div class="scard__tags">
+          <span class="stag">Pen Testing</span>
+          <span class="stag">Zero Trust</span>
+          <span class="stag">Compliance</span>
+        </div>
+      </div>
+
+      <div class="scard reveal">
+        <span class="scard__num">04</span>
+        <div class="scard__icon">💻</div>
+        <h3>Custom Software Development</h3>
+        <p>Bespoke web, mobile, and enterprise applications built with modern stacks. From MVP to enterprise platform — scalable, performant, beautifully designed.</p>
+        <div class="scard__tags">
+          <span class="stag">React / Node</span>
+          <span class="stag">Mobile Apps</span>
+          <span class="stag">Microservices</span>
+        </div>
+      </div>
+
+      <div class="scard reveal">
+        <span class="scard__num">05</span>
+        <div class="scard__icon">🤖</div>
+        <h3>AI & Machine Learning</h3>
+        <p>Embed intelligence into your operations. Custom ML models, NLP solutions, process automation, and AI strategy consulting for measurable productivity gains.</p>
+        <div class="scard__tags">
+          <span class="stag">ML Models</span>
+          <span class="stag">NLP</span>
+          <span class="stag">RPA</span>
+          <span class="stag">LLMs</span>
+        </div>
+      </div>
+
+      <div class="scard reveal">
+        <span class="scard__num">06</span>
+        <div class="scard__icon">📊</div>
+        <h3>Data & Analytics</h3>
+        <p>Turn raw data into strategic insight. We design modern data warehouses, BI dashboards, real-time pipelines, and predictive analytics platforms.</p>
+        <div class="scard__tags">
+          <span class="stag">Power BI</span>
+          <span class="stag">Data Lake</span>
+          <span class="stag">ETL Pipelines</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ PROCESS ════════════════ -->
+<section class="section" id="process">
+  <div class="container">
+    <div class="process__head reveal">
+      <div class="tag">How We Work</div>
+      <h2>A Proven <span class="accent">Delivery</span> Process</h2>
+    </div>
+    <div class="process__steps">
+      <div class="pstep reveal">
+        <div class="pstep__dot" data-step="1">🔍</div>
+        <h4>Discovery & Assessment</h4>
+        <p>Deep-dive into your business objectives, existing systems, and challenges to map the right technology path forward.</p>
+      </div>
+      <div class="pstep reveal">
+        <div class="pstep__dot" data-step="2">📐</div>
+        <h4>Strategy & Design</h4>
+        <p>Architect a tailored solution roadmap with clear milestones, risk management, and measurable success metrics.</p>
+      </div>
+      <div class="pstep reveal">
+        <div class="pstep__dot" data-step="3">⚙️</div>
+        <h4>Build & Execute</h4>
+        <p>Agile implementation by certified experts — iterative delivery ensures quality, speed, and alignment at every sprint.</p>
+      </div>
+      <div class="pstep reveal">
+        <div class="pstep__dot" data-step="4">📈</div>
+        <h4>Optimize & Scale</h4>
+        <p>Continuous monitoring, performance tuning, and strategic support to maximise ROI as your business evolves.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ INDUSTRIES ════════════════ -->
+<section class="section section--alt" id="industries">
+  <div class="container">
+    <div class="industries__head reveal">
+      <div class="tag">Industries We Serve</div>
+      <h2>Deep <span class="accent">Domain</span> Expertise</h2>
+    </div>
+    <div class="industries__grid">
+      <div class="icard reveal">
+        <span class="icard__icon">🏦</span>
+        <h4>Banking & Finance</h4>
+        <p>Fintech solutions, core banking modernization, compliance automation.</p>
+      </div>
+      <div class="icard reveal">
+        <span class="icard__icon">🏥</span>
+        <h4>Healthcare & Life Sciences</h4>
+        <p>HIPAA-compliant systems, telemedicine, EHR integration & AI diagnostics.</p>
+      </div>
+      <div class="icard reveal">
+        <span class="icard__icon">🛒</span>
+        <h4>Retail & E-Commerce</h4>
+        <p>Omnichannel platforms, inventory intelligence, personalization engines.</p>
+      </div>
+      <div class="icard reveal">
+        <span class="icard__icon">🏭</span>
+        <h4>Manufacturing</h4>
+        <p>Industry 4.0, IoT integration, predictive maintenance, ERP transformation.</p>
+      </div>
+      <div class="icard reveal">
+        <span class="icard__icon">🎓</span>
+        <h4>Education & EdTech</h4>
+        <p>Learning management systems, adaptive platforms and student analytics.</p>
+      </div>
+      <div class="icard reveal">
+        <span class="icard__icon">🚚</span>
+        <h4>Logistics & Supply Chain</h4>
+        <p>Real-time tracking, route optimization, warehouse automation solutions.</p>
+      </div>
+      <div class="icard reveal">
+        <span class="icard__icon">🏗️</span>
+        <h4>Real Estate & Construction</h4>
+        <p>PropTech platforms, project management tools, digital twin solutions.</p>
+      </div>
+      <div class="icard reveal">
+        <span class="icard__icon">🌐</span>
+        <h4>Government & Public Sector</h4>
+        <p>Digital public services, secure data systems, citizen-facing applications.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ TESTIMONIALS ════════════════ -->
+<section class="section" id="testimonials">
+  <div class="container">
+    <div class="testi__head reveal">
+      <div class="tag">Client Stories</div>
+      <h2>Trusted by <span class="accent">Leaders</span> Worldwide</h2>
+    </div>
+    <div class="testi__grid">
+      <div class="tcard reveal">
+        <div class="tcard__stars">★★★★★</div>
+        <p class="tcard__quote">"Galaxis Global Techs transformed our legacy banking infrastructure into a modern cloud-native platform in just 6 months. Exceptional expertise, flawless delivery, and outstanding communication throughout."</p>
+        <div class="tcard__author">
+          <div class="tcard__avatar">AR</div>
+          <div>
+            <div class="tcard__name">Arjun Reddy</div>
+            <div class="tcard__role">CTO, Apex Financial Services</div>
+          </div>
+        </div>
+      </div>
+      <div class="tcard reveal">
+        <div class="tcard__stars">★★★★★</div>
+        <p class="tcard__quote">"Their AI automation solution reduced our operational costs by 38% in the first quarter alone. The team's domain knowledge in healthcare IT is unmatched. Highly recommended for any digital transformation initiative."</p>
+        <div class="tcard__author">
+          <div class="tcard__avatar">SP</div>
+          <div>
+            <div class="tcard__name">Sunita Patel</div>
+            <div class="tcard__role">Head of Operations, MedCore Group</div>
+          </div>
+        </div>
+      </div>
+      <div class="tcard reveal">
+        <div class="tcard__stars">★★★★★</div>
+        <p class="tcard__quote">"From cybersecurity audit to full zero-trust implementation — Galaxis did it all with professionalism and speed. Our compliance score went from 64% to 99%. Incredible results, incredible team."</p>
+        <div class="tcard__author">
+          <div class="tcard__avatar">MK</div>
+          <div>
+            <div class="tcard__name">Michael Krause</div>
+            <div class="tcard__role">CISO, GlobalRetail AG</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ TEAM ════════════════ -->
+<section class="section section--alt" id="team">
+  <div class="container">
+    <div class="team__head reveal">
+      <div class="tag">Our Team</div>
+      <h2>Meet the <span class="accent">Experts</span></h2>
+    </div>
+    <div class="team__grid">
+      <div class="tmcard reveal">
+        <div class="tmcard__avatar">GK</div>
+        <h4>Govind Kumar</h4>
+        <div class="tmcard__role">Founder & CEO</div>
+        <div class="tmcard__badge">Strategy & Vision</div>
+        <div class="tmcard__links">
+          <a href="#" class="tmcard__link">in</a>
+          <a href="#" class="tmcard__link">tw</a>
+        </div>
+      </div>
+      <div class="tmcard reveal">
+        <div class="tmcard__avatar">PR</div>
+        <h4>Priya Rajan</h4>
+        <div class="tmcard__role">CTO & Cloud Architect</div>
+        <div class="tmcard__badge">AWS / Azure / GCP</div>
+        <div class="tmcard__links">
+          <a href="#" class="tmcard__link">in</a>
+          <a href="#" class="tmcard__link">gh</a>
+        </div>
+      </div>
+      <div class="tmcard reveal">
+        <div class="tmcard__avatar">AS</div>
+        <h4>Anand Sharma</h4>
+        <div class="tmcard__role">Head of Cybersecurity</div>
+        <div class="tmcard__badge">CISSP Certified</div>
+        <div class="tmcard__links">
+          <a href="#" class="tmcard__link">in</a>
+          <a href="#" class="tmcard__link">tw</a>
+        </div>
+      </div>
+      <div class="tmcard reveal">
+        <div class="tmcard__avatar">NV</div>
+        <h4>Neha Verma</h4>
+        <div class="tmcard__role">AI & ML Lead</div>
+        <div class="tmcard__badge">Data Science Expert</div>
+        <div class="tmcard__links">
+          <a href="#" class="tmcard__link">in</a>
+          <a href="#" class="tmcard__link">gh</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ CTA BAND ════════════════ -->
+<div class="cta-band">
+  <div class="cta-band__inner">
+    <h2>Ready to Transform Your Business?</h2>
+    <p>Join 250+ companies that trust Galaxis Global Techs to power their digital future. Let's build something exceptional together.</p>
+    <div>
+      <a href="#contact" class="btn-dark">Start a Conversation <span>→</span></a>
+      <a href="#services" class="btn-ghost">View Our Services</a>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════ FAQ ════════════════ -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="faq__head reveal">
+      <div class="tag">FAQ</div>
+      <h2>Frequently Asked <span class="accent">Questions</span></h2>
+    </div>
+    <div class="faq__grid">
+      <div class="fitem reveal">
+        <div class="fitem__q" onclick="toggleFaq(this)">
+          What industries does Galaxis Global Techs serve?
+          <div class="fitem__icon">▾</div>
+        </div>
+        <div class="fitem__a">
+          We serve a wide range of industries including Banking & Finance, Healthcare, Retail & E-Commerce, Manufacturing, Education, Logistics, Real Estate, and Government sectors — bringing deep domain expertise to every engagement.
+        </div>
+      </div>
+      <div class="fitem reveal">
+        <div class="fitem__q" onclick="toggleFaq(this)">
+          How do you approach new client projects?
+          <div class="fitem__icon">▾</div>
+        </div>
+        <div class="fitem__a">
+          We begin with a thorough Discovery & Assessment phase — understanding your business objectives, existing systems, and challenges. From there we co-create a tailored roadmap, present it for your approval, then execute via agile sprints with full transparency.
+        </div>
+      </div>
+      <div class="fitem reveal">
+        <div class="fitem__q" onclick="toggleFaq(this)">
+          Do you offer ongoing managed IT support?
+          <div class="fitem__icon">▾</div>
+        </div>
+        <div class="fitem__a">
+          Yes. Our Managed Services offering includes 24/7 infrastructure monitoring, helpdesk support, security management, performance optimization, and strategic advisory — ensuring continuous value beyond project delivery.
+        </div>
+      </div>
+      <div class="fitem reveal">
+        <div class="fitem__q" onclick="toggleFaq(this)">
+          Can you work with our existing technology stack?
+          <div class="fitem__icon">▾</div>
+        </div>
+        <div class="fitem__a">
+          Absolutely. We are technology-agnostic and experienced across a very broad range of platforms, frameworks, and cloud providers. We augment, modernize, or integrate with your existing systems rather than forcing unnecessary replacements.
+        </div>
+      </div>
+      <div class="fitem reveal">
+        <div class="fitem__q" onclick="toggleFaq(this)">
+          What certifications does your team hold?
+          <div class="fitem__icon">▾</div>
+        </div>
+        <div class="fitem__a">
+          Our consultants hold certifications including AWS Solutions Architect, Azure Administrator, Google Cloud Professional, CISSP, CISM, PMP, Scrum Master, and various vendor-specific accreditations depending on the service domain.
+        </div>
+      </div>
+      <div class="fitem reveal">
+        <div class="fitem__q" onclick="toggleFaq(this)">
+          How do I get started with Galaxis Global Techs?
+          <div class="fitem__icon">▾</div>
+        </div>
+        <div class="fitem__a">
+          Simply fill out the contact form below or email us directly. We'll schedule a no-obligation discovery call within 24 hours, listen carefully to your needs, and provide a tailored proposal — completely free of charge.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ CONTACT ════════════════ -->
+<section class="section section--alt" id="contact">
+  <div class="container">
+    <div class="contact__grid">
+      <div class="reveal-left">
+        <div class="tag">Contact Us</div>
+        <h2>Let's Build Something <span class="accent">Great</span></h2>
+        <p class="contact__info p">
+          Ready to accelerate your digital journey? Tell us about your project and our team will respond within 24 hours with a tailored approach.
+        </p>
+        <div class="contact__items">
+          <div class="citem">
+            <div class="citem__icon">📧</div>
+            <div>
+              <div class="citem__label">Email</div>
+              <div class="citem__value">hello@galaxisglobaltechs.com</div>
+            </div>
+          </div>
+          <div class="citem">
+            <div class="citem__icon">📞</div>
+            <div>
+              <div class="citem__label">Phone</div>
+              <div class="citem__value">+1 (800) GALAXIS</div>
+            </div>
+          </div>
+          <div class="citem">
+            <div class="citem__icon">🌐</div>
+            <div>
+              <div class="citem__label">Website</div>
+              <div class="citem__value">galaxisglobaltechs.com</div>
+            </div>
+          </div>
+          <div class="citem">
+            <div class="citem__icon">📍</div>
+            <div>
+              <div class="citem__label">Headquarters</div>
+              <div class="citem__value">Global Offices — US · UK · India · UAE</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact__form reveal-right">
+        <h3>Send Us a Message</h3>
+        <div class="form-row">
+          <div class="fgroup">
+            <label>First Name</label>
+            <input type="text" placeholder="John"/>
+          </div>
+          <div class="fgroup">
+            <label>Last Name</label>
+            <input type="text" placeholder="Doe"/>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="fgroup">
+            <label>Email Address</label>
+            <input type="email" placeholder="john@company.com"/>
+          </div>
+          <div class="fgroup">
+            <label>Phone Number</label>
+            <input type="tel" placeholder="+1 000 000 0000"/>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="fgroup">
+            <label>Company Name</label>
+            <input type="text" placeholder="Your Company Ltd."/>
+          </div>
+          <div class="fgroup">
+            <label>Service Interested In</label>
+            <select>
+              <option value="">Select a service...</option>
+              <option>IT Strategy & Consulting</option>
+              <option>Cloud Solutions</option>
+              <option>Cybersecurity</option>
+              <option>Custom Software Development</option>
+              <option>AI & Machine Learning</option>
+              <option>Data & Analytics</option>
+              <option>Managed IT Services</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="fgroup" style="margin-bottom:16px">
+          <label>Project Details</label>
+          <textarea placeholder="Tell us about your project, goals, budget, and timeline..."></textarea>
+        </div>
+        <button class="form-submit" id="formSubmit" onclick="submitForm()">
+          Send Message <span class="arr">→</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ FOOTER ════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <a href="#home" class="nav__logo">
+          <div class="nav__logo-icon">G</div>
+          <span class="nav__logo-text">Galaxis<span>Global</span>Techs</span>
+        </a>
+        <p>Premier IT consultancy delivering digital transformation, cloud, cybersecurity and AI services to businesses worldwide.</p>
+        <div class="footer__social">
+          <a href="#" title="LinkedIn">in</a>
+          <a href="#" title="Twitter">tw</a>
+          <a href="#" title="GitHub">gh</a>
+          <a href="#" title="YouTube">yt</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h5>Services</h5>
+        <a href="#services">IT Consulting</a>
+        <a href="#services">Cloud Solutions</a>
+        <a href="#services">Cybersecurity</a>
+        <a href="#services">Software Dev</a>
+        <a href="#services">AI & ML</a>
+        <a href="#services">Data Analytics</a>
+      </div>
+      <div class="footer__col">
+        <h5>Company</h5>
+        <a href="#about">About Us</a>
+        <a href="#team">Our Team</a>
+        <a href="#process">Our Process</a>
+        <a href="#industries">Industries</a>
+        <a href="#testimonials">Clients</a>
+        <a href="#contact">Careers</a>
+      </div>
+      <div class="footer__col">
+        <h5>Contact</h5>
+        <a href="mailto:hello@galaxisglobaltechs.com">hello@galaxisglobaltechs.com</a>
+        <a href="tel:+18004252947">+1 (800) GALAXIS</a>
+        <a href="#contact">United States</a>
+        <a href="#contact">United Kingdom</a>
+        <a href="#contact">India</a>
+        <a href="#contact">UAE</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2024 Galaxis Global Techs. All rights reserved.</span>
+      <div style="display:flex;gap:20px">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to top -->
+<div class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</div>
+
+<script>
+/* ── MOBILE MENU ── */
+function toggleMenu(){
+  const m=document.getElementById('mobileMenu');
+  m.classList.toggle('open');
+}
+
+/* ── SCROLL REVEAL ── */
+const revObs=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){e.target.classList.add('vis');revObs.unobserve(e.target)}
+  });
+},{threshold:0.08,rootMargin:'0px 0px -40px 0px'});
+
+document.querySelectorAll('.reveal,.reveal-left,.reveal-right').forEach((el,i)=>{
+  el.style.transitionDelay=(Math.floor(i%4)*0.1)+'s';
+  revObs.observe(el);
+});
+
+/* ── NAV SCROLL EFFECT ── */
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>{
+  nav.style.background=window.scrollY>60?'rgba(10,14,26,0.98)':'rgba(10,14,26,0.82)';
+  document.getElementById('backTop').classList.toggle('show',window.scrollY>400);
+});
+
+/* ── FAQ ── */
+function toggleFaq(el){
+  const item=el.parentElement;
+  const isOpen=item.classList.contains('open');
+  document.querySelectorAll('.fitem').forEach(f=>f.classList.remove('open'));
+  if(!isOpen)item.classList.add('open');
+}
+
+/* ── FORM SUBMIT ── */
+function submitForm(){
+  const btn=document.getElementById('formSubmit');
+  btn.innerHTML='✓ Message Sent!';
+  btn.style.background='linear-gradient(135deg,#00c8aa,#009b84)';
+  btn.disabled=true;
+  setTimeout(()=>{
+    btn.innerHTML='Send Message <span class="arr">→</span>';
+    btn.style.background='';
+    btn.disabled=false;
+  },3500);
+}
+
+/* ── ACTIVE NAV LINK ── */
+const sections=document.querySelectorAll('section[id]');
+const navAs=document.querySelectorAll('.nav__links a');
+window.addEventListener('scroll',()=>{
+  let cur='';
+  sections.forEach(s=>{if(window.scrollY>=s.offsetTop-90)cur=s.id});
+  navAs.forEach(a=>{
+    const href=a.getAttribute('href');
+    a.style.color=href==='#'+cur?'var(--white)':'';
+  });
+},{passive:true});
+
+/* ── CLOSE MENU ON RESIZE ── */
+window.addEventListener('resize',()=>{
+  if(window.innerWidth>768){
+    document.getElementById('mobileMenu').classList.remove('open');
+  }
+});
+</script>
+</body>
+</html>
